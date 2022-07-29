@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #414141;
+}
+
+.block .box{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.box_icon_xmark{
+    width: 40%;
+    height: 400px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    /* border: 1px solid red; */
+}
+.block_img1{
+    width:  95px;
+    height: 95px;
+    object-fit: cover;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+}
+.block_img1:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.box img{
+    cursor: pointer;
+
+}
+.messege_icon{
+    /*transition: 0.4s linear;
+    */
+    opacity: 1;
+    animation: animationmessege 20s infinite;
+    -webkit-animation: animationmessege 20s infinite;
+}
+
+.close{
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+.close .messege_icon{
+    padding: 7px;
+}
+.close .close_picture .messege_icon{
+    opacity: 1;
+}
+.messege_icon:hover{
+    /*transition: 0.4s linear;
+    */transform: scale(0.2);
+    animation-play-state: paused;
+    -webkit-transform: scale(1.2 , 1.2);
+    -moz-transform: scale(1.2 , 1.2);
+    -ms-transform: scale(1.2 , 1.2);
+    -o-transform: scale(1.2 , 1.2);
+}
+
+img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.block_img{
+   width: 95px;
+   height: 95px;
+}
+@keyframes animationmessege{
+    from{
+        margin-top: 1px;
+    }
+    to{
+        transform: rotate(33333deg);
+        -webkit-transform: rotate(33333deg);
+        -moz-transform: rotate(33333deg);
+        -ms-transform: rotate(33333deg);
+        -o-transform: rotate(33333deg);
+        animation-iteration-count: inherit;
+}
+
+}
